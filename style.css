@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+   
+}
+
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(27, 35, 105);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel{
+    width: 90%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ptop{
+    background-color: rgb(14, 14, 66);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    color: white;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    margin-right: .45rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.value{
+    background: white;
+    width: 100%;
+    padding: .05rem .45rem;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+
+.pbtm{
+    
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 1rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+    flex-wrap: wrap;
+}
+
+.bubble{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(9, 9, 61);
+    display: flex;
+    
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.10rem;
+    transition: opacity 200ms ease-out;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.bubble:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+.bubble-content {
+    opacity: 0;
+    animation: fadeIn 270ms ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.game-div{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.game-title{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: rgb(37, 37, 61);
+}
+
+.game-score{
+    font-size: 1.55rem;
+    font-weight: 600;
+    color: rgb(19, 19, 66);
+
+}
+
+.res-btn,
+.start-btn{
+    padding: 10px 22px;
+    border: none;
+    background-color: rgb(19, 18, 77);
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 4px;
+    transition: opacity 200ms ease-out;
+}
+
+.res-btn:hover,
+.start-btn:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+
